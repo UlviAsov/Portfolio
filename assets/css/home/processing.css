@@ -1,0 +1,79 @@
+main #working-processing{
+    color: #222;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+main #working-processing .working-processing-content .content-title{
+    max-width: 600px;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+main #working-processing .working-processing-content .processes{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 100px;
+}
+main #working-processing .working-processing-content .processes h3{
+    padding: 40px 0px 10px;
+}
+main #working-processing .working-processing-content .processes p{
+    font-size: 14px;
+    width: 200px;
+}
+#working-processing .working-processing-content .processes .process .process-icon{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+}
+#working-processing .working-processing-content .processes .process .process-icon span{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    font-size: 22px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ef6d6d;
+    color: #fff;
+}
+#working-processing .working-processing-content .processes .process .process-icon:hover{
+    background-color: #ef6d6d;
+}
+#working-processing .working-processing-content .processes .process .process-icon:hover span
+{
+    background-color: #222;
+    color: white;
+}
+#working-processing .working-processing-content .processes .process{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+    main #working-processing .working-processing-content .content-title{
+        max-width: 400px;
+    }
+    main #working-processing .working-processing-content .processes{
+        flex-direction: column;
+        gap: 40px;
+    }
+    main #working-processing .working-processing-content .processes p{
+        width: 100%;
+    }
+
+}

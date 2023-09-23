@@ -1,0 +1,88 @@
+#whatIKnow{
+    background-color: #222;
+    margin-top: 80px;
+    padding: 30px;
+}
+#whatIKnow .mySkills{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#whatIKnow .title h2{
+    color: #fff;
+}
+#whatIKnow .skill h4{
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+#whatIKnow .skill{
+    width: 48%;
+    padding-bottom: 30px;
+}
+#whatIKnow .skill .container{
+    width: 100%;
+    height: 30px;
+    background-color: #999;
+}
+#whatIKnow .skill .container .progress{
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#whatIKnow .skill .container .progress span{
+    padding-right: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+#whatIKnow .skill .container .html{
+    width: 90%;
+    background-color: orangered;
+}
+#whatIKnow .skill .fa-html5{
+    color: orangered;
+}
+#whatIKnow .skill .container .css{
+    width: 70%;
+    background-color: rgb(105, 105, 254);
+}
+#whatIKnow .skill .fa-css3{
+    color: rgb(105, 105, 254);
+}
+#whatIKnow .skill .container .js{
+    width: 50%;
+    background-color: yellow;
+}
+#whatIKnow .skill .fa-js{
+    color: yellow;
+}
+#whatIKnow .skill .container .sass{
+    width: 30%;
+    background-color: rgb(245, 162, 176);
+}
+#whatIKnow .skill .fa-sass{
+    color: rgb(245, 162, 176);
+}
+#whatIKnow .skill .container .bootstrap{
+    width: 70%;
+    background: rgb(145,43,203);
+    background: linear-gradient(137deg, rgba(145,43,203,1) 45%, rgba(63,11,93,1) 71%, rgba(55,8,82,1) 100%);
+}
+#whatIKnow .skill .fa-bootstrap{
+    color:rgb(105,20,153);
+}
+#whatIKnow .skill .container .react{
+    width: 100%;
+    background-color: aqua;
+}
+#whatIKnow .skill .fa-react{
+   color: aqua;
+}
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+    #whatIKnow .skill{
+        width: 100%;
+    }
+}

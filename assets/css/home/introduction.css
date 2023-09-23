@@ -1,0 +1,67 @@
+main{
+    background-image: url(/assets/img/main-bg.jpg);
+    background-size: 100% 100%;
+}
+main #introduction{
+    padding-top: 50px;
+    color: #222;
+    width: 80%;
+    margin: 0 auto;
+}
+.title{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title .line{
+    background-color: #ef6d6d;
+    height: 3px;
+    width: 50px;
+    margin-top: 20px;
+}
+.title h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+main #introduction .introduction-content .about-me{
+    line-height: 30px;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+main #introduction .introduction-content .my-skills{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+main #introduction .introduction-content .my-skills .skill{
+    text-align: center;
+    padding: 20px 0;
+}
+main #introduction .introduction-content .my-skills .skill h3{
+    font-size: 16px;
+    padding: 20px 0 10px;
+}
+main #introduction .introduction-content .my-skills .skill p{
+    width: 200px;
+    font-size: 14px;
+}
+main #introduction .introduction-content .my-skills .skill i{
+    color: #ef6d6d;
+}
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+    main #introduction .introduction-content .my-skills{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    main #introduction .introduction-content .my-skills .skill{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

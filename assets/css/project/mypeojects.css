@@ -1,0 +1,81 @@
+.title{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title .line{
+    background-color: #ef6d6d;
+    height: 3px;
+    width: 50px;
+    margin-top: 20px;
+}
+.title h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+#myProjects{
+    padding-top: 50px;
+}
+#myProjects .lead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+#myProjects .lead p{
+    text-align: center;
+    max-width: 600px;
+}
+#myProjects .projects{
+    padding-top: 70px;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+#myProjects .projects .project{
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden; 
+}
+#myProjects .projects .project::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ef6d6d;
+    opacity: .4;
+    width: 100%;
+    height: 60%;
+    transition: 1s all ease-in-out;
+    transform: translateX(-17%) translateY(-90%) rotate(45deg);
+}
+#myProjects .projects .project:hover::before{
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+}
+#myProjects .projects .project a img{
+    width: 350px;
+    height: 250px;
+}
+#myProjects .projects .project .project-content{
+    margin-top: -4px;
+    padding: 20px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+#myProjects .projects .project .project-content h3{
+    padding-bottom: 10px;
+}
+#myProjects .projects .project .project-content p{
+    max-width: 310px;
+}

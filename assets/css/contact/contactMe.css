@@ -1,0 +1,97 @@
+#contact-me{
+    padding: 50px 0 100px;
+}
+.title{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title .line{
+    background-color: #ef6d6d;
+    height: 3px;
+    width: 50px;
+    margin-top: 20px;
+}
+.title h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.lead{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.lead p{
+    font-size: 22px;
+    max-width: 600px;
+}
+#contact-me .container{
+    padding-top: 50px;
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    gap: 20px;
+}
+#contact-me .container .map{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#contact-me .container .map iframe{
+    max-width: 500px;
+}
+#contact-me .container form .form-fields{
+    padding: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#contact-me .container form .form-fields input{
+    width: 300px;
+    font-size: 17px;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: #999;
+    border: 1px solid;
+    outline-color: #ef6d6d;
+}
+#contact-me .container form .form-fields textarea{
+    font-size: 17px;
+    padding: 10px;
+    border: none;
+    color: #999;
+    border: 1px solid;
+    outline-color: #ef6d6d;
+    width: 605px;
+    height: 275px;
+    resize: none;
+}
+#contact-me .container form .form-fields button{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 17px;
+    color: #fff;
+    background-color: #222;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 0;
+    transition: .5s all ease-in-out;
+}
+#contact-me .container form .form-fields button:hover{
+    background-color: #ef6d6d;
+}
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+    #contact-me .container{
+        flex-direction: column;
+    }
+    #contact-me .container textarea{
+        width: 300px;
+    }
+    #contact-me .container .map iframe{
+        width: 100%;
+    }
+    #contact-me .container form .form-fields input{
+        /* width: 100%; */
+    }
+}

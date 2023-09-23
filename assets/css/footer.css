@@ -1,0 +1,44 @@
+footer{
+   background-color: #222;
+   border-top: 5px solid #ef6d6d;
+}
+footer .container{
+    color: #fff;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+footer .container .logo h2{
+    font-size: 40px;
+}
+footer .container .logo h2 i{
+    color: orange;
+}
+footer .container .logo h2 span{
+    font-size: 25px;
+}
+footer .container .copyright{
+    font-size: 18px;
+}
+footer .container .icons a{
+    font-size: 17px;
+    color: white;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+}
+footer .container .icons a:hover{
+    background-color: #ef6d6d;
+}
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+    footer .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
